@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <h1>Опрос</h1>
+<h2>Приглашаем пройти небольшой опрос (не более 5 минут).</h2>
+<body>
+    <div>
+    <label for="name">1)Кличка питомца</label>
+    <input type="text" id=name>
+    </div><br>
+    <div>
+        <label for=contacts>2)Имя и контакты владельца</label>
+    <input type="text" id=contacts>
+    </div><br>
+<div>
+    <label for=poroda>3)Порода питомца</label>
+<select id=poroda>
+    <option value="Немецкий шпиц">Немецкий шпиц</option>
+    <option value="Йоркширский терьер">Йоркширский терьер</option>
+    <option value="Чихуахуа">Чихуахуа</option>
+    <option value="Немецкая овчарка">Немецкая овчарка</option>
+    <option value="Лабрадор-ретривер">Лабрадор-ретривер</option>
+    <option value="Хаски">Хаски</option>
+    <option value="Джек-рассел-терьер">Джек-рассел-терьер</option>
+    <option value="Среднеазиатская овчарка">Среднеазиатская овчарка</option>
+</select>
+</div>
+<div>
+<form>
+    <p>4)Чем питается</p>
+    <input type="checkbox" name=korm value="1">Сухой корм 
+    <input type="checkbox" name=korm value="2">Влажный корм
+    <input type="checkbox" name=korm value="3">Натуральный корм
+</form>
+</div>
+<div>
+    <form><p>5)Самец или самка</p>
+        <input type="radio" name=sex value="1"> Самец
+        <input type="radio" name=sex value="2"> Самка
+    </form>
+    </div><br>
+    <form><p>6)Комментарий владельца</p>
+<textarea rows="3"></textarea></form>
+<form>
+    <p> Приложите, пожалуйста, фото питомца</p>
+    <input type="file">
+    </form><br>
+<div><button>Сохранить</button></div>
+</body>
+</html>

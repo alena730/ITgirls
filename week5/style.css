@@ -1,0 +1,50 @@
+.footer {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+
+main {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid yellow;
+}
+
+.mainpart {
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+}
+
+.stylemore3 {
+    flex-wrap: nowrap;
+}
+
+section {
+    border: 2px solid red;
+}

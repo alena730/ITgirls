@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-areas:
+        "logo header header "
+        "main main main"
+        "footer footer sidebar";
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr;
+    gap: 10px;
+
+}
+
+.logo {
+    grid-area: logo;
+    border: royalblue solid 1px;
+}
+
+.header {
+    grid-area: header;
+    border: royalblue solid 1px;
+}
+
+.header :hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border: royalblue solid 1px;
+}
+
+.main {
+    font-size: 72;
+    font-family: Georgia, 'Times New Roman', Times, serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    grid-area: main;
+    border: royalblue solid 1px;
+}
+
+.footer {
+    grid-area: footer;
+    border: royalblue solid 1px;
+}
+
+.row-1 {
+    grid-area: row-1
+}
+
+.row-2 {
+    grid-area: row-2
+}
