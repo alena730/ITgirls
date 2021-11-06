@@ -8,8 +8,7 @@
         "content-1 content-2 aside"
         "content-3 content-3 aside"
         "footer footer footer";
-    grid-template-columns: 60% 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 
 }
@@ -23,18 +22,13 @@
     width: 100%;
 }
 
-.nav-item {
-    padding: 5px;
-    font-size: 2em;
-}
-
 .main {
     justify-items: center;
     background-color: tan;
     grid-area: main;
     border: solid red;
     display: grid;
-    width: 90vw;
+    width: 2fr;
     height: 100%;
 
 }
@@ -53,26 +47,32 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: silver;
     grid-area: footer;
-    justify-content: space-between;
-    border: solid red
+    justify-content: space-around;
+    border: solid red;
+    height: 100px;
+    align-content: center;
+    justify-content: center;
 }
 
 .content-1 {
     grid-area: content-1;
-
     justify-content: center;
+    align-content: center;
+    border: solid rgb(255, 0, 212);
 }
 
 .content-2 {
     grid-area: content-2;
-
     justify-content: center;
+    align-content: center;
+    border: solid rgb(255, 0, 212);
 }
 
 .content-3 {
     grid-area: content-3;
     justify-content: center;
-    display: flex;
+    align-content: center;
+    border: solid rgb(255, 0, 212);
 }
 
 .menu {
