@@ -1,52 +1,276 @@
-.container {
-    display: grid;
-    width: 100%;
-    height: 600px;
-    grid-template-areas:
-        "logo header header "
-        "main main main"
-        "footer footer sidebar";
-    grid-template-columns: 200px 1fr 1fr;
-    grid-template-rows: 80px 1fr 1fr;
-    gap: 10px;
+@media screen and (min-width: 415px) {
+    .container {
+        display: grid;
+        width: 100%;
+        height: 80vw;
+        grid-template-areas:
+            "logo header"
+            "main main"
+            "statistics statistics";
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 10% 1fr;
+        gap: 10px;
+        font-family: "sf pro dispay", sans-serif;
+    }
 
+    .logo {
+        grid-area: logo;
+        display: grid;
+        border: rgb(220, 65, 225) solid 1px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .header {
+        display: grid;
+        grid-area: header;
+        border: royalblue solid 1px;
+        align-content: center;
+        justify-content: start;
+        font-family: SF Pro Display;
+        Font style: bold;
+        Font size: 14px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 1280px;
+    }
+
+    .rules {
+        display: flex;
+        flex-direction: row;
+        width: 1280px;
+        height: 105px;
+        align-content: center;
+        justify-content: space-evenly;
+        background-color: #FA434B;
+
+    }
+
+    .menu {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .header :hover {
+        text-decoration: underline;
+    }
+
+    .main {
+        font-size: 72px;
+        font-family: "sf pro dispay", sans-serif;
+        grid-area: main;
+        border: royalblue solid 1px;
+        width: 100vw;
+        background-image: url(http://192.168.50.196:5500/week6/inno%201.png);
+        color: white;
+        Fill: Solid #FFFFFF;
+    }
+
+    .statistics {
+        display: grid;
+        grid-area: statistics;
+        border: rgb(225, 70, 65) solid 1px;
+        grid-template-areas:
+            "st1 st2 st3 3fr more"
+            "st4 st5 st6 3fr more";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        justify-content: space-between;
+        width: 1280px;
+        height: 1fr;
+        background-color: gainsboro;
+        padding: auto;
+
+    }
+
+    .st1 {
+        display: grid;
+        grid-area: st1;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 12px;
+        Align: Left;
+        Vertical align: Center;
+        Letter spacing: 0.2px;
+    }
+
+    .st2 {
+        display: grid;
+        grid-area: st2;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 12px;
+        Align: Left;
+        Vertical align: Center;
+        Letter spacing: 0.2px;
+    }
+
+    .st3 {
+        grid-area: st3;
+        display: grid;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 12px;
+        Align: Left;
+        Vertical align: Center;
+        Letter spacing: 0.2px;
+    }
+
+    .st4 {
+        grid-area: st4;
+        display: grid;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 24px;
+        Align: Left;
+        Vertical align: Center;
+        Letter spacing: 0.2px;
+    }
+
+    .st5 {
+        grid-area: st5;
+        display: grid;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 24px;
+        Align: Left;
+        Vertical align: Center;
+        Letter spacing: 0.2px;
+    }
+
+    .st6 {
+        grid-area: st6;
+        display: grid;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 24px;
+        Align: Left;
+        Vertical align: Center;
+        Letter spacing: 0.2px;
+    }
+
+    .more {
+        width: 1280px;
+        height: 120px;
+        grid-area: more;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        Font family: "sf pro dispay", sans-serif;
+    }
+
+    .button {
+        background-color: #FA434B;
+        color: #FA434B;
+        radius: 22.5px;
+        Align: Inside;
+        Width: 2px Font family: "sf pro dispay", sans-serif;
+    }
+
+    .headeriPhone {
+        display: none;
+    }
 }
 
-.logo {
-    grid-area: logo;
-    border: royalblue solid 1px;
-}
+@media screen and (max-width: 414px) {
+    .logo {
+        grid-area: logo;
+        display: grid;
+        border: rgb(220, 65, 225) solid 1px;
+        justify-content: center;
+        align-content: center;
+    }
 
-.header {
-    grid-area: header;
-    border: royalblue solid 1px;
-}
+    .header {
+        display: none;
+    }
 
-.header :hover {
-    text-decoration: underline;
-}
+    .headeriPhone {
+        grid-area: headeriphone;
+        display: grid;
+    }
 
-.sidebar {
-    grid-area: sidebar;
-    border: royalblue solid 1px;
-}
+    .st1 {
+        display: grid;
+        grid-area: st1;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 32px;
+    }
 
-.main {
-    font-size: 72;
-    font-family: Georgia, 'Times New Roman', Times, serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    grid-area: main;
-    border: royalblue solid 1px;
-}
+    .st2 {
+        display: grid;
+        grid-area: st2;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 32px;
+    }
 
-.footer {
-    grid-area: footer;
-    border: royalblue solid 1px;
-}
+    .st3 {
+        grid-area: st3;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 32px;
+    }
 
-.row-1 {
-    grid-area: row-1
-}
+    .st4 {
+        grid-area: st4;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 18px;
+    }
 
-.row-2 {
-    grid-area: row-2
+    .st5 {
+        grid-area: st5;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 18px;
+    }
+
+    .st6 {
+        grid-area: st6;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
+        Font size: 18px;
+    }
+
+    .main {
+        font-size: 44px;
+        font-family: "sf pro dispay", sans-serif;
+        grid-area: main;
+        border: royalblue solid 1px;
+        width: 359;
+        height: 106;
+        background-image: url(http://192.168.50.196:5500/week6/inno%201.png);
+        color: white;
+        Fill: Solid #FFFFFF;
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "logo headeriphone"
+            "st1 st1"
+            "st2 st2"
+            "st3 st3"
+            "st4 st4"
+            "st5 st5"
+            "st6 st6"
+            "main main"
+            "more more"
+            "rules rules";
+    }
+
+    .rules {
+        grid-area: rules;
+        display: flex;
+        flex-direction: column;
+        width: 414px;
+        height: 300px;
+        align-content: center;
+        justify-content: space-evenly;
+        background-color: #FA434B;
+    }
 }
