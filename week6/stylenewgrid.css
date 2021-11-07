@@ -2,13 +2,15 @@
     .container {
         display: grid;
         width: 100%;
-        height: 80vw;
+        height: 100%;
         grid-template-areas:
             "logo header"
             "main main"
-            "statistics statistics";
+            "statistics statistics"
+            "rules rules"
+            "news news";
         grid-template-columns: 20% 1fr;
-        grid-template-rows: 10% 1fr;
+        grid-template-rows: 5% 1fr;
         gap: 10px;
         font-family: "sf pro dispay", sans-serif;
     }
@@ -19,6 +21,7 @@
         border: rgb(220, 65, 225) solid 1px;
         justify-content: center;
         align-content: center;
+        height: 71px;
     }
 
     .header {
@@ -30,9 +33,10 @@
         font-family: SF Pro Display;
         Font style: bold;
         Font size: 14px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 10fr;
         grid-template-rows: 1fr;
         width: 1280px;
+        height: 71px;
     }
 
     .rules {
@@ -41,7 +45,7 @@
         width: 1280px;
         height: 105px;
         align-content: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         background-color: #FA434B;
 
     }
@@ -66,6 +70,8 @@
         background-image: url(http://192.168.50.196:5500/week6/inno%201.png);
         color: white;
         Fill: Solid #FFFFFF;
+        width: 1449px;
+        height: 812px;
     }
 
     .statistics {
@@ -73,13 +79,13 @@
         grid-area: statistics;
         border: rgb(225, 70, 65) solid 1px;
         grid-template-areas:
-            "st1 st2 st3 3fr more"
-            "st4 st5 st6 3fr more";
+            "st1 st2 st3 1fr more"
+            "st4 st5 st6 1fr more";
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr;
         justify-content: space-between;
         width: 1280px;
-        height: 1fr;
+        height: 120px;
         background-color: gainsboro;
         padding: auto;
 
@@ -155,9 +161,8 @@
         width: 1280px;
         height: 120px;
         grid-area: more;
+        justify-self: right;
         display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
         Font family: "sf pro dispay", sans-serif;
     }
 
@@ -173,6 +178,110 @@
         display: none;
     }
 }
+
+.news {
+    border: olive solid;
+    width: 100%;
+    height: inherit;
+    height: fit-content;
+    display: grid;
+    grid-template-areas:
+        "news__header news__all"
+        "news__main_block1 news__main_block2";
+    gap: 10px;
+}
+
+.news__main_block1 {
+    width: 580px;
+    height: 150px;
+    display: grid;
+    grid-area: news__main_block1;
+    grid-template-areas:
+        "pic1"
+        "headernews1"
+        "mainnews1";
+
+}
+
+.news__main_block2 {
+    display: grid;
+    grid-area: news__main_block2;
+    grid-template-areas:
+        "pic2"
+        "headernews2"
+        "mainnews2";
+}
+
+
+.headernews1 {
+
+    width: 414px;
+    height: 60px;
+    display: grid;
+    grid-area: headernews1;
+    Font family: "sf pro dispay", sans-serif;
+    Font style: Medium;
+    Font size: 20px;
+}
+
+.headernews2 {
+    width: 414px;
+    height: 60px;
+    display: grid;
+    grid-area: headernews2;
+    Font family: "sf pro dispay", sans-serif;
+    Font style: Medium;
+    Font size: 20px;
+}
+
+.news__header {
+    display: grid;
+    grid-area: news__header;
+    Font family: "sf pro dispay", sans-serif;
+    Font style: Bold;
+    Font size: 36px;
+}
+
+.news__all {
+    display: grid;
+    grid-area: news__all;
+    Font family: "sf pro dispay", sans-serif;
+}
+
+.mainnews1 {
+    display: grid;
+    grid-area: mainnews1;
+    width: 580px;
+    height: 48px;
+    color: #86837F;
+    Font family: "sf pro dispay", sans-serif;
+    Font size: 12px;
+
+}
+
+.mainnews2 {
+    display: grid;
+    grid-area: mainnews2;
+    width: 580px;
+    height: 48px;
+    color: #86837F;
+    Font family: "sf pro dispay", sans-serif;
+    Font size: 12px;
+}
+
+.pic1 {
+    grid-area: pic1;
+    width: 580px;
+    height: 150px;
+}
+
+.pic2 {
+    grid-area: pic2;
+    width: 580px;
+    height: 150px;
+}
+
+
 
 @media screen and (max-width: 414px) {
     .logo {
@@ -190,6 +299,10 @@
     .headeriPhone {
         grid-area: headeriphone;
         display: grid;
+        justify-content: left;
+        align-content: center;
+        Font family: "sf pro dispay", sans-serif;
+        Font style: Bold;
     }
 
     .st1 {
@@ -236,6 +349,10 @@
         Font size: 18px;
     }
 
+    .st1 .st2 .st3 .st3 .st4 .st5 .st6 .more .main {
+        background-image: url(http://192.168.50.196:5500/week6/inno%201.png);
+    }
+
     .main {
         font-size: 44px;
         font-family: "sf pro dispay", sans-serif;
@@ -243,7 +360,6 @@
         border: royalblue solid 1px;
         width: 359;
         height: 106;
-        background-image: url(http://192.168.50.196:5500/week6/inno%201.png);
         color: white;
         Fill: Solid #FFFFFF;
     }
@@ -272,5 +388,16 @@
         align-content: center;
         justify-content: space-evenly;
         background-color: #FA434B;
+    }
+
+    .news {
+        width: 414;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news__all {
+        display: none;
     }
 }
