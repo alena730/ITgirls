@@ -1,0 +1,85 @@
+.main__menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 20px;
+    color: black;
+}
+
+.header__logo {
+    position: absolute;
+    width: 201px;
+    height: 40px;
+    left: 76px;
+    top: 90px;
+
+}
+
+.header__button {
+    position: absolute;
+    width: 156px;
+    height: 38px;
+    left: 1210px;
+    top: 90px;
+}
+
+.main_header {
+    margin: 1%;
+
+}
+
+
+.main__cards {
+    display: grid;
+    grid-template-areas:
+        "main__cards_element1 main__cards_element2 main__cards_element3"
+        "main__cards_element4 main__cards_element5 main__cards_subscribe";
+    margin: 1%;
+    gap: 30px;
+    px;
+}
+
+.main__cards_element1 {
+    display: grid;
+    grid-area: main__cards_element1;
+}
+
+.main__cards_element2 {
+    display: grid;
+    grid-area: main__cards_element2;
+}
+
+.main__cards_element3 {
+    display: grid;
+    grid-area: main__cards_element3;
+}
+
+.main__cards_element4 {
+    display: grid;
+    grid-area: main__cards_element4;
+}
+
+.main__cards_element5 {
+    display: grid;
+    grid-area: main__cards_element5;
+}
+
+.main__cards_subscribe {
+    display: grid;
+    grid-area: main__cards_subscribe;
+}
+
+.main__cards_subscribe {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #EC615B;
+}
+
+#email {
+    background-color: #EC615B;
+}
+
+#email_header {
+    color: white bold;
+}
