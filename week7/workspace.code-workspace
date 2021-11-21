@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../обучение"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ITgirls"
+	}
+}
