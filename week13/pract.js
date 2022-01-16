@@ -1,3 +1,6 @@
-let x=" \\t \\n" - 2 
-
-alert(x);
+function showX(x)
+{ 
+	return 
+	x;
+}
+alert(showX(28));

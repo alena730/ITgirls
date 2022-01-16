@@ -1,7 +1,5 @@
-let number1 = Number(str)
-let number2 = Number(str)
-
-let x=0;
+const number1 = Number(document.getElementById("number1").value);
+const number2 = Number(document.getElementById("number2").value);
 
 function plus()
 {
@@ -22,3 +20,4 @@ function divide()
 {
     let x=number1/number2;
 }
+console.log (typeof number1)
